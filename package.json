@@ -1,0 +1,48 @@
+{
+  "name": "clinic-backend",
+  "version": "1.0.0",
+  "main": "src/shared/main.ts",
+  "scripts": {
+    "dev": "tsx --watch -r tsconfig-paths/register --env-file=.env ./src/shared/main.ts",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "eslint:check": "eslint src/**/*.ts",
+    "eslint:fix": "eslint src/**/*.ts --fix",
+    "prettier:check": "prettier --check src/**/*.ts",
+    "prettier:fix": "prettier --write src/**/*.ts",
+    "format": "prettier --write 'src/**/*.{js,ts}'",
+    "commit": "git-cz"
+  },
+  "author": "Samuel Carvalho",
+  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
+  },
+  "dependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.1.0",
+    "@types/bcrypt": "^5.0.2",
+    "@types/body-parser": "^1.19.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.6",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vite-tsconfig-paths": "^5.0.1",
+    "vitest": "^2.1.4"
+  }
+}
